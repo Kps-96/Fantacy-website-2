@@ -1,0 +1,479 @@
+.main{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    
+}
+
+nav{
+    margin-left: 8%;
+    background: transparent;
+    border-radius: 50px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.n-items{
+    
+    font-size: larger;
+    font-weight: 600;
+    
+}
+
+.video{
+    position: absolute;
+    z-index: -2;
+    padding-left: 4%;
+    width: fit-content;
+    height: 100%;
+    justify-content: center;
+    
+}
+
+.content {
+    
+    color: white;
+    font-size: 24px;
+    padding: 40px 70px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    animation: both;
+}
+
+a:hover{
+    color: red;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+#page{
+    background-color: white;
+    display: flex;
+
+}
+
+#scroller{
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior:smooth;
+}
+
+selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#page2{
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#page2l{
+    background-color: rgb(212, 0, 0);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2r{
+    display: inline;
+    width: 50%;
+    height: 100vh;
+}
+
+#page2r video{
+  justify-content: center;
+    margin-left: 150px;
+    width: 600px;
+    height: 500px;
+}
+
+#page2l h2{
+    color: white;
+    align-items: center;
+    padding-left: 70px;
+    font-weight: 300px;
+    
+
+}
+
+#page2l-img{
+    width: 500px;
+    height: 400px;
+}
+
+#page2l-h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Lemon', serif;
+    font-weight: 900;
+}
+
+#view-video{
+    margin-left: 40%;
+    font-size: larger;
+    padding: 10px 25px 10px 25px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#view-video:hover{
+    background-color: red;
+    color: white;
+    transition: 0.8s;
+}
+
+#page3{
+    /* background-color: green; */
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#page3r{
+    background-color: rgb(212, 0, 0);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3l{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iframe{
+    width: 50vw;
+    height: 100vh;
+}
+
+#page4{
+    background-color: black;
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+}
+
+#page4-h1{
+  color: white;
+  padding-right: 80px;
+  font-size: 100px;
+  text-shadow:4px 4px red;
+}
+
+ #page5{
+  background-image: linear-gradient(red,black);
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+
+
+#page6{
+    background-color: white;
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+}
+
+.page6-t{
+  background-color: white;
+  width: 1350px;
+  height: 20vh;
+  align-self: start;
+  z-index: 0;
+}
+
+.page6-b{
+  background-color: rgb(255, 124, 124);
+  width: 100%;
+  height: 80vh;
+  align-self: flex-end;
+  justify-self: center;
+  z-index: 0;
+}
+
+#last{
+  background-color: #ff0000;
+  width: 70%;
+  height: 120px;
+  margin: 20vh 0 0 17%;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#last-2{
+  background-color: white;
+  width: 70%;
+  height: 200px;
+  margin-left:17%;
+  margin-top: 0px;
+  padding-bottom: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-top: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(red,black);
+    border-radius: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+}
+header {
+  margin: 0 auto;
+  width: 400px;
+  border: 10px solid red;
+  
+}
+h5{
+  background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
+  padding: 1.2rem 0;
+  
+  
+}
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  background: #5EE270;
+  
+}
+
+canvas{
+    margin-right: 30%;
+    border: 10px solid red;
+    
+}
+
+/* rock paper siccor */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Apply global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E6E6FA;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #660033;
+}
+
+/* Style scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.scoreboard > div {
+  font-size: 2rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 2px solid #00ee4f;
+  border-radius: 10px;
+  color: #8cec33;
+}
+
+/* Style choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.choice {
+  border: 2px solid #660033;
+  border-radius: 10px;
+  margin: 0 2rem;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice:active {
+  transform: scale(0.9);
+}
+
+.choice i {
+  color: #ffd000;
+  font-size: 50px;
+}
+
+/* Style result */
+.result {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #e79003;
+}
+
+#computer-choice {
+  text-align: center;
+  font-size: 2rem;
+  color: #eaff02;
+}
+
+/* Style timer */
+.timer {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1px;
+  color: #ff0606;
+}
+
+/* Style play again button */
+.play-again {
+  display: block;
+  margin: 3px auto 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #88ff00;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.play-again:hover {
+  background-color: #00ffe1;
+}
+
+
+
+.play-again:active {
+  transform: scale(0.9);
+}
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+  .choices {
+    flex-wrap: wrap;
+  }
+
+  .choice {
+    margin: 2rem 1rem;
+  }
+
+  .timer {
+    margin-top: 1rem;
+  }
+}
+
+#last-2 ul{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.page6-b{
+  padding-top: 5%;
+}
+
+#last-2 a{
+  text-decoration: none;
+  color: #000;
+}
+
+#last-2 a:hover{
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#image-page{
+  border-radius: 30px;
+  width: 25vw;
+}
+
+#kps{
+  color: white; 
+  padding-left: 50px;"
+}
+
+#kps:hover{
+  font-size: 50px;
+  color: #000;
+  font-family: fantasy;
+  text-emphasis-style: 50px;
+}
